@@ -1,0 +1,189 @@
+/* 
+
+
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+   
+ }
+ 
+  main form {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .navbar{
+    background-color: burlywood;
+    display: flex;
+    color: rgb(12, 12, 14);
+   height: 80px;
+   padding-left: 70px;  
+   justify-content: center;
+
+
+  }
+  
+
+  section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .product img{
+    width :40%;
+     height:40%;
+     object-fit: cover;
+
+
+     
+  } */
+
+
+  /* index.css */
+
+/* Global styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dbdbea;
+    color: #eee5e5;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #7576cd;
+    color: white;
+    padding: 9px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 100px;
+}
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 200;
+    display: flex;
+    justify-content: space-around;
+    gap: 0px;
+    display: flex;
+}
+
+
+
+
+/* Product Section */
+.product {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.product img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+}
+
+.product video {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Form styling */
+form {
+    margin: 40px auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+form input[type="email"],
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    background-color: #5e60ce;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #4e54c8;
+}
+
+/* Footer */
+footer {
+    background-color: #5e60ce;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fbd786;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 20px;
+    }
+
+    form {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .product img {
+        width: 90%;
+    }
+}
